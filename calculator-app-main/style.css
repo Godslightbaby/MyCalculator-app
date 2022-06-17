@@ -154,8 +154,8 @@ body{
   }
   @media only screen and (max-width:600px){
 
-    body {
-    }
+    /* body {
+    } */
     .btn{
         margin-top: 15px;
         height: 400px; 
