@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:  hsl(222, 26%, 31%);
+    /* display:flex; */
+}
+.calculator{
+    margin:100px auto;
+    /* border: solid red; */
+    width:300px;
+/* height: 300px; */
+}
+.heading{
+    /* width: 200px; */
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.theme{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100px;
+    align-items: center;
+    color: white;
+   
+}
+.tri-state-toggle {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(223, 31%, 20%) ;
+    border-radius: 40px;
+  }
+  #one {
+    opacity: 1;
+  }
+  .tri-state-toggle input {
+    height: 10px;
+    width: 10px;
+    appearance: none;
+    background-color: red;
+    border-radius: 50%;
+    opacity: 0;
+  }
+  input:hover {
+    cursor: pointer;
+  }
+ .display{ 
+    /* border: solid hotpink; */
+      /* width: 40vw; */
+      /* height: 10vh; */
+      background-color: hsl(224, 36%, 15%);
+      color: white;
+      margin-top: 5%;
+      display: flex;
+      justify-content: end;
+      color:hsl(224, 36%, 15%);
+  }
+   .display input{
+    height: 5vh;
+    background-color: hsl(224, 36%, 15%);
+    color: white;
+    margin-top: 5%;
+    display: flex;
+    justify-content: end;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+   }
+   /* .btn{
+       background-color: hsl(223, 31%, 20%);
+      
+       margin-top: 5%;
+       text-align: center;
+       border-radius: 3%;
+       border:solid red;
+   }
+   .btn button{
+       width: 50px;
+       height: 5vh;
+   }
+   .btndown{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+   .btndown button{
+       border: solid mediumturquoise;
+       display: flex;
+       flex-direction: row;
+       width: 70px;
+       
+       justify-content: space-around;
+   } */
+   .btn{
+       margin-top: 15px;
+    height: 300px; 
+    /* padding: 10px; */
+    background-color: hsl(224, 36%, 15%);;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .row-1,
+  .row-2,
+  .row-3,
+  .row-4,
+ .btndown
+  {display: flex;
+    justify-content: space-around;
+    /* padding-top: 5px; */
+      /* height: 40px; */
+    
+    }
+    .row-1 button
+    .row-2, button
+    .row-3, button
+    .row-4, button{
+        height: 40px;
+        width: 60px;
+        border-radius: 8px;
+        border: none;
+        font-size: large;
+        font-weight: bold;
+        margin: 5px 5px;
+    }
+    .btndown button{
+        width: 132px;
+        height: 40px;
+        border-radius: 8px;
+        /* margin: 5px 5px; */
+        /* border: none; */
+        /* border: solid mediumspringgreen; */
+  }
+  .reset{
+      background-color: hsl(225, 21%, 49%) ;
+      color: white;
+      font-weight: bold;
+  }
+  .equal{
+      color: white;
+      background-color: hsl(6, 63%, 50%);
+      font-weight: bold;
+  }
+  .del{
+      background-color: hsl(225, 21%, 49%);
+      font-weight: bold;
+      color: white;
+  }
+  @media only screen and (max-width:600px){
+
+    body {
+    }
+    .btn{
+        margin-top: 15px;
+        height: 400px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0px;
+        background-color: hsl(224, 36%, 15%);  
+    }
+    .row-1 button
+    .row-2, button
+    .row-3, button
+    .row-4, button{
+        height: 60px;
+        width: 60px;
+        border-radius: 8px;
+        border: none;
+        font-size: large;
+        font-weight: bold;
+        margin: 0px;
+        
+    }
+    .display input{
+        height: 8vh;
+        background-color: hsl(224, 36%, 15%);
+        color: white;
+        margin-top: 5%;
+        display: flex;
+        justify-content: end;
+        border-radius: 10px;
+        border: none;
+        font-weight: bold;
+        font-size: 20px;
+       }
+  }
