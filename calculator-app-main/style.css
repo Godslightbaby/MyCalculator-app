@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-color:  hsl(222, 26%, 31%);
+    background-color:  hsl(268, 75%, 9%);
     /* display:flex; */
 }
 .calculator{
@@ -16,7 +16,7 @@ body{
     /* width: 200px; */
     display: flex;
     justify-content: space-between;
-    color: white;
+    color: hsl(52, 100%, 62%);
 }
 .theme{
     display: flex;
@@ -24,13 +24,13 @@ body{
     
     width: 100px;
     align-items: center;
-    color: white;
+    color: hsl(52, 100%, 62%);
    
 }
 .tri-state-toggle {
     display: flex;
     justify-content: center;
-    background-color: hsl(223, 31%, 20%) ;
+    background-color: hsl(268, 71%, 12%);
     border-radius: 40px;
   }
   #one {
@@ -40,7 +40,7 @@ body{
     height: 10px;
     width: 10px;
     appearance: none;
-    background-color: red;
+    background-color:hsl(176, 100%, 44%);
     border-radius: 50%;
     opacity: 0;
   }
@@ -51,17 +51,17 @@ body{
     /* border: solid hotpink; */
       /* width: 40vw; */
       /* height: 10vh; */
-      background-color: hsl(224, 36%, 15%);
+      background-color: hsl(268, 47%, 21%); ;
       color: white;
       margin-top: 5%;
       display: flex;
       justify-content: end;
-      color:hsl(224, 36%, 15%);
+      /* color:hsl(224, 36%, 15%); */
   }
    .display input{
     height: 5vh;
-    background-color: hsl(224, 36%, 15%);
-    color: white;
+    background-color: hsl(268, 40%, 36%); ;
+    color: hsl(52, 100%, 62%);
     margin-top: 5%;
     display: flex;
     justify-content: end;
@@ -99,7 +99,7 @@ body{
        margin-top: 15px;
     height: 300px; 
     /* padding: 10px; */
-    background-color: hsl(224, 36%, 15%);;
+    background-color:  hsl(268, 47%, 21%);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -127,6 +127,7 @@ body{
         font-size: large;
         font-weight: bold;
         margin: 5px 5px;
+        background-color: hsl(285, 91%, 52%);
     }
     .btndown button{
         width: 132px;
@@ -137,17 +138,17 @@ body{
         /* border: solid mediumspringgreen; */
   }
   .reset{
-      background-color: hsl(225, 21%, 49%) ;
+      background-color: hsl(281, 89%, 26%) ;
       color: white;
       font-weight: bold;
   }
   .equal{
       color: white;
-      background-color: hsl(6, 63%, 50%);
+      background-color:  hsl(176, 100%, 44%);
       font-weight: bold;
   }
   .del{
-      background-color: hsl(225, 21%, 49%);
+      background-color: hsl(281, 89%, 26%);
       font-weight: bold;
       color: white;
   }
@@ -162,7 +163,7 @@ body{
         flex-direction: column;
         justify-content: space-around;
         padding: 0px;
-        background-color: hsl(224, 36%, 15%);  
+        background-color:  hsl(268, 47%, 21%);  
     }
     .row-1 button
     .row-2, button
@@ -179,8 +180,7 @@ body{
     }
     .display input{
         height: 8vh;
-        background-color: hsl(224, 36%, 15%);
-        color: white;
+        background-color: hsl(268, 47%, 21%); ;
         margin-top: 5%;
         display: flex;
         justify-content: end;
