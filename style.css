@@ -3,20 +3,17 @@
     padding: 0;
 }
 body{
-    background-color:  hsl(268, 75%, 9%);
-    /* display:flex; */
+    background-color:  lightgray ;
 }
 .calculator{
     margin:100px auto;
-    /* border: solid red; */
     width:300px;
-/* height: 300px; */
 }
 .heading{
-    /* width: 200px; */
+    width: 350px;
     display: flex;
     justify-content: space-between;
-    color: hsl(52, 100%, 62%);
+
 }
 .theme{
     display: flex;
@@ -24,14 +21,12 @@ body{
     
     width: 100px;
     align-items: center;
-    color: hsl(52, 100%, 62%);
-   
 }
 .tri-state-toggle {
     display: flex;
     justify-content: center;
-    background-color: hsl(268, 71%, 12%);
     border-radius: 40px;
+    border: 0.1px solid;
   }
   #one {
     opacity: 1;
@@ -40,68 +35,33 @@ body{
     height: 10px;
     width: 10px;
     appearance: none;
-    background-color:hsl(176, 100%, 44%);
+    background-color:hsl(25, 98%, 40%);
     border-radius: 50%;
     opacity: 0;
   }
   input:hover {
     cursor: pointer;
   }
- /* .display{ 
-  
-      background-color: hsl(268, 47%, 21%); ;
-      color: white;
-      margin-top: 5%;
-      display: flex;
-      justify-content: end;
-  } */
    .display input{
-    /* border: solid red; */
-    width: 100%;
-    height: 7vh;
-    background-color: hsl(268, 40%, 36%); ;
-    color: hsl(52, 100%, 62%);
+    width: 350px;
+    height: 90px;
+    background-color: white;
     margin-top: 5%;
     display: flex;
     justify-content: end;
-    border-radius: 10px;
+    border-radius: 7px;
     border: none;
     font-weight: bold;
     font-size: 20px;
    }
-   /* .btn{
-       background-color: hsl(223, 31%, 20%);
-      
-       margin-top: 5%;
-       text-align: center;
-       border-radius: 3%;
-       border:solid red;
-   }
-   .btn button{
-       width: 50px;
-       height: 5vh;
-   }
-   .btndown{
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-   }
-   .btndown button{
-       border: solid mediumturquoise;
-       display: flex;
-       flex-direction: row;
-       width: 70px;
-       
-       justify-content: space-around;
-   } */
-   .btn{
+   #btn{
        margin-top: 15px;
     height: 300px; 
-    /* padding: 10px; */
-    background-color:  hsl(268, 47%, 21%);
+    background-color:hsl(0, 5%, 81%);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 350px;
   }
   
   .row-1,
@@ -110,11 +70,9 @@ body{
   .row-4,
  .btndown
   {display: flex;
-    justify-content: space-around;
-    /* padding-top: 5px; */
-      /* height: 40px; */
-    
+    justify-content: space-around;  
     }
+
     .row-1 button
     .row-2, button
     .row-3, button
@@ -126,30 +84,25 @@ body{
         font-size: large;
         font-weight: bold;
         margin: 5px 5px;
-        background-color: hsl(285, 91%, 52%);
-        color: hsl(52, 100%, 62%);
-        /* font-weight: bold; */
+        background-color: lightgray;
     }
     .btndown button{
         width: 132px;
         height: 40px;
         border-radius: 8px;
-        /* margin: 5px 5px; */
-        /* border: none; */
-        /* border: solid mediumspringgreen; */
   }
   .reset{
-      background-color: hsl(281, 89%, 26%) ;
+      background-color: hsl(176, 100%, 44%) ;
       color: white;
       font-weight: bold;
   }
   .equal{
-      color: black;
-      background-color:  hsl(176, 100%, 44%);
+      color: white;
+      background-color: hsl(25, 98%, 40%);
       font-weight: bold;
   }
   .del{
-      background-color: hsl(281, 89%, 26%);
+      background-color: hsl(176, 100%, 44%);
       font-weight: bold;
       color: white;
   }
@@ -157,11 +110,7 @@ body{
     margin-top: 5px;
   }
   @media only screen and (max-width:600px){
-
-    /* body {
-    } */
-    .btn{
-        margin-top: 15px;
+    #btn{
         height: 400px; 
         display: flex;
         flex-direction: column;
@@ -183,12 +132,12 @@ body{
         
     }
     .display input{
-        height: 8vh;
+        height: 70px;
         background-color: hsl(268, 47%, 21%);
         margin-top: 5%;
         display: flex;
         justify-content: end;
-        border-radius: 10px;
+        border-radius: 7px;
         border: none;
         font-weight: bold;
         font-size: 20px;

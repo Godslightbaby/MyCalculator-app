@@ -18,9 +18,9 @@
 <body>
 <div class="calculator">
 <div class="heading">
-<h3>calc</h3>
+<h3 id="h3">calc</h3>
 <div class="theme">
-  <h5>Theme</h5>
+  <h5 id="h5">Theme</h5>
   <div class="switch">
   <div class="tri-state-toggle">
     <input class="button" type="radio" name="toggle" id="one" />
@@ -31,45 +31,43 @@
 </div>
 </div>
 
-<div class="display">
- <input type="button" value="399,981" id="inpt">
-</div>
-<div class="btn">
-  <div class=" row-1">
-  <button>7</button>
-  <button>8</button>
-  <button>9</button>
-  <button class="del">DEL</button>
+<main class="display">
+ <input type="text" placeholder="0" value="" id="output">
+<div id="btn">
+  <div class=" row-1" id="rows">
+  <button class="btn7" onclick="btnclick(7)">7</button>
+  <button class="btn7" onclick="btnclick(8)">8</button>
+  <button  class="btn7" onclick="btnclick(9)">9</button>
+  <button class="del" id="dels" onclick="delet('Del')">DEL</button>
   </div>
   <div class="row-2">
-    <button>4</button>
-  <button>5</button>
-  <button>6</button>
-  <button>+</button>
+    <button class="btn7" onclick="btnclick(4)">4</button>
+  <button class="btn7" onclick="btnclick(5)">5</button>
+  <button class="btn7" onclick="btnclick(6)">6</button>
+  <button class="btn7" onclick="btnclick('+')">+</button>
   </div>
   <div class="row-3">
-  <button>1</button>
-  <button>2</button>
-  <button>3</button>
-  <button>-</button>
+  <button class="btn7" onclick="btnclick(1)">1</button>
+  <button class="btn7" onclick="btnclick(2)">2</button>
+  <button class="btn7" onclick="btnclick(3)">3</button>
+  <button class="btn7" onclick="btnclick('-')">-</button>
   </div>
   <div class="row-4">
-  <button>.</button>
-  <button>0</button>
-  <button>/</button>
-  <button>x</button>
-  </div>
+  <button class="btn7" onclick="btnclick('.')">.</button>
+  <button class="btn7" onclick="btnclick(0)">0</button>
+  <button class="btn7" onclick="btnclick('/')">/</button>
+  <button class="btn7" onclick="btnclick('*')">x</button>
+  </div> 
   <div class="btndown">
-  <button class="reset">RESET</button>
-  <button class="equal">=</button>
+  <button class="reset" id="sets" onclick="reset('')">RESET</button>
+  <button class="equal" id="equals" onclick="result('=')">=</button>
   </div>
 </div>
-</div>
+</main>
 
 
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Unwana Jack</a>.
   </div> -->
-</body>
-</html>
+       <script src="./function.js"></script>                                                            </body>                                                   </html>
